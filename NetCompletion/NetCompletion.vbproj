@@ -12,4 +12,8 @@
     <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic.Features" Version="2.3.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+
 </Project>
