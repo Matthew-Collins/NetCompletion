@@ -88,9 +88,9 @@ End Module"
             'Get Code Completion
             Dim Service = CompletionService.GetService(Document)
             If Service IsNot Nothing Then
-                For Offset = 0 To Text.Length
-                    'Debug.WriteLine("")
-                    Debug.WriteLine($"Offset: {Offset}")
+                'For Offset = 0 To Text.Length
+                'Debug.WriteLine("")
+                Debug.WriteLine($"Offset: {Offset}")
                     Dim List = Service.GetCompletionsAsync(Document, Offset).Result
                     If List IsNot Nothing Then
                         'Debug.WriteLine($"Total: {List.Items.Count}")
@@ -106,7 +106,7 @@ End Module"
                         Debug.WriteLine(String.Join(",", Items))
 
                     End If
-                Next
+                'Next
             End If
 
         Catch ex As Exception
